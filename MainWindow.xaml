@@ -1,0 +1,35 @@
+﻿<Window x:Class="Prakt6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakt6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="303" Width="543" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Решение">
+                <MenuItem Header="Сравнить перв пару" Click="Proverka"></MenuItem>
+                <MenuItem Header="Произв перв пары" Click="Proizv"></MenuItem>
+                <MenuItem Header="Вычит дв пар" Click="Вычитание2Пар"></MenuItem>
+                <MenuItem Header="Вычитание трех пар" Click="Вычитание3Пар"></MenuItem>
+                <MenuItem Header="Сложение двух пар" Click="Сложение"></MenuItem>
+                <MenuItem Header="Вычитание двух пар,класс" Click="ВычитаниеНов"></MenuItem>
+                <MenuItem Header="Деление двух пар" Click="Деление"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Очистка" Click="Clear"></MenuItem>
+            <MenuItem Header="Справка" Click="Spravka"></MenuItem>
+            <MenuItem Header="Выход" Click="Quit"></MenuItem>
+        </Menu>
+        <TextBox x:Name="pair1" HorizontalAlignment="Left" Margin="22,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" MaxLength="8" ToolTip="Первое число первой пары"/>
+        <TextBox x:Name="pair2" HorizontalAlignment="Left" Margin="22,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" MaxLength="8" ToolTip="Второе число первой пары"/>
+        <TextBox x:Name="pair3" HorizontalAlignment="Left" Margin="174,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" MaxLength="8" ToolTip="Первое число второй пары"/>
+        <TextBox x:Name="pair4" HorizontalAlignment="Left" Margin="174,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" MaxLength="8" ToolTip="Второе число второй пары"/>
+        <TextBox x:Name="Itog" HorizontalAlignment="Left" Margin="22,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Height="94" IsReadOnly="True"/>
+        <Label Content="Первая пара" HorizontalAlignment="Left" Margin="20,18,0,0" VerticalAlignment="Top" Height="29"/>
+        <Label Content="Вторая пара" HorizontalAlignment="Left" Margin="174,18,0,0" VerticalAlignment="Top" Height="29"/>
+        <TextBox x:Name="pair5" HorizontalAlignment="Left" Margin="364,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" MaxLength="8" ToolTip="Первое число третьей пары"/>
+        <TextBox x:Name="pair6" HorizontalAlignment="Left" Margin="364,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" MaxLength="8" ToolTip="Первое число третьей пары"/>
+        <Label Content="Третья пара" HorizontalAlignment="Left" Margin="364,18,0,0" VerticalAlignment="Top" Height="29"/>
+    </Grid>
+</Window>
