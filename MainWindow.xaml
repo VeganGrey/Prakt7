@@ -5,16 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prakt6"
         mc:Ignorable="d"
-        Title="MainWindow" Height="303" Width="543" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="303" Width="344" WindowStartupLocation="CenterScreen">
     <Grid>
         <Menu VerticalAlignment="Top">
             <MenuItem Header="Решение">
                 <MenuItem Header="Сравнить перв пару" Click="Proverka"></MenuItem>
                 <MenuItem Header="Произв перв пары" Click="Proizv"></MenuItem>
-                <MenuItem Header="Вычит дв пар" Click="Вычитание2Пар"></MenuItem>
-                <MenuItem Header="Вычитание трех пар" Click="Вычитание3Пар"></MenuItem>
                 <MenuItem Header="Сложение двух пар" Click="Сложение"></MenuItem>
-                <MenuItem Header="Вычитание двух пар,класс" Click="ВычитаниеНов"></MenuItem>
+                <MenuItem Header="Вычитание двух пар" Click="ВычитаниеНов"></MenuItem>
                 <MenuItem Header="Деление двух пар" Click="Деление"></MenuItem>
             </MenuItem>
             <MenuItem Header="Очистка" Click="Clear"></MenuItem>
@@ -28,8 +26,5 @@
         <TextBox x:Name="Itog" HorizontalAlignment="Left" Margin="22,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Height="94" IsReadOnly="True"/>
         <Label Content="Первая пара" HorizontalAlignment="Left" Margin="20,18,0,0" VerticalAlignment="Top" Height="29"/>
         <Label Content="Вторая пара" HorizontalAlignment="Left" Margin="174,18,0,0" VerticalAlignment="Top" Height="29"/>
-        <TextBox x:Name="pair5" HorizontalAlignment="Left" Margin="364,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" MaxLength="8" ToolTip="Первое число третьей пары"/>
-        <TextBox x:Name="pair6" HorizontalAlignment="Left" Margin="364,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" MaxLength="8" ToolTip="Первое число третьей пары"/>
-        <Label Content="Третья пара" HorizontalAlignment="Left" Margin="364,18,0,0" VerticalAlignment="Top" Height="29"/>
     </Grid>
 </Window>
